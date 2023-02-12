@@ -1,0 +1,29 @@
+.container{
+  max-width: 120rem;
+  margin: 8rem auto;
+
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+
+  min-height: 50rem;
+}
+
+.header{
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2);
+}
+
+.sidebar{
+  background-color: var(--color-grey-dark-1);
+//  use flex property to define its width
+  flex: 0 0 18%;
+}
+
+.hoter-view{
+  background-color: #fff;
+  flex: 1;
+}
+.content{
+  display: flex;
+}
