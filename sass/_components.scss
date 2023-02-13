@@ -202,3 +202,41 @@
     object-fit: cover;
   }
 }
+
+///////////////////////////////////////////////
+// Hotel overview
+
+.overview {
+  display: flex;
+  align-items: center;
+  &__heading{
+
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+
+  &__icon-star,
+  &__icon-location{
+    fill: var(--color-primary);
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  &__location {
+
+  }
+
+  &__rating {
+
+  }
+
+  &__rating-average {
+
+  }
+
+  &__rating-count {
+
+  }
+}
