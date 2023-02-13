@@ -23,11 +23,16 @@
   background-color: var(--color-grey-dark-1);
 //  use flex property to define its width
   flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-between;
 }
 
 .hoter-view{
   background-color: #fff;
   flex: 1;
+
+  height: 80rem;
 }
 .content{
   display: flex;
