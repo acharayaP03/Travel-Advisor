@@ -190,3 +190,15 @@
   padding: 2.5rem;
   margin-top: auto;
 }
+
+///////////////////////////////////////////////
+// Gallery
+
+.gallery{
+  display: flex;
+  &__photo {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
