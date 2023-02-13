@@ -40,6 +40,7 @@
 
 .detail{
   display: flex;
+  font-size: 1.4rem;
   gap: 4.5rem;
   padding: 4.5rem;
   border-bottom: var(--line);
@@ -50,7 +51,6 @@
   flex: 0 0 60%;
   box-shadow: var(--shadow-light);
   padding: 3rem;
-  font-size: 1.4rem;
 }
 
 .user-reviews{
