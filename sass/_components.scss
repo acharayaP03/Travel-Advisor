@@ -233,19 +233,37 @@
   }
 
   &__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
 
+  &__icon-location{
+    margin-right: 0.5rem;
   }
 
   &__rating {
+    background-color: var(--color-primary);
+    color: #fff;
+    margin-left: 3rem;
+    padding: 0 2.25rem;
+    align-self: stretch;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
-  &__rating-average {
-
+  &__rating--average {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -3px;
   }
 
-  &__rating-count {
-
+  &__rating--count {
+    font-size: 0.8rem;
+    text-transform: uppercase;
   }
 }
 
