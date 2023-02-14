@@ -391,12 +391,20 @@
     height: 1rem;
     width: 1rem;
     margin-right: 0.7rem;
-    //background-image: url("../images/arrow-right2.svg");
-    //background-size: cover;
 
-    background-color: var(--color-primary);
-    -webkit-mask-image: url("../images/arrow-right2.svg");
-    -webkit-mask-size: cover;
+    /* for older browser that does not support mask image */
+
+    background-image: url("../images/arrow-right2.svg");
+    background-size: cover;
+
+    /* for newer browser that supports image mask */
+    @supports (-webkit-mask-image: url("../images/arrow-right2.svg")) or (mask-image: url("../images/arrow-right2.svg")) {
+      background-color: var(--color-primary);
+      -webkit-mask-image: url("../images/arrow-right2.svg");
+      -webkit-mask-size: cover;
+      background-image: none;
+    }
+
   }
 }
 
