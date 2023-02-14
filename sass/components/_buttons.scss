@@ -1,0 +1,136 @@
+
+///////////////////////////////////////////////
+// button inline
+
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover{
+    color: var(--color-grey-dark-1);
+  }
+
+  &:focus {
+    outline-style: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0,0,0, 0.25);
+  }
+
+  100%{
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+
+
+///////////////////////////////////////////////
+// call to action section
+
+.cta{
+  padding: 3.5rem 0;
+  text-align: center;
+
+
+  @media only screen and (max-width: $bp-medium){
+    padding: 2.5rem 0;
+  }
+
+  &__book-now{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    color: var(--color-grey-dark-2);
+    font-weight: 400;
+  }
+}
+
+.btn{
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+  }
+
+  &:focus{
+    outline-style: none;
+  }
+
+  &__visible{
+    padding: 2rem 7.5rem;
+  }
+
+  &__invisible{
+    position: absolute;
+    left: 0;
+    top: -100%;
+    padding: 2rem 0rem;
+
+  }
+
+  &:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+  }
+
+  &:hover &__visible{
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible{
+    top: 0;
+  }
+
+  &:focus{
+    outline-style: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
+
+.btn-reviews{
+  border: none;
+  outline:none;
+  background-color: transparent;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  color: currentColor;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all .2s;
+
+  &:hover{
+    transform: translateY(-3px);
+  }
+  &:focus{
+    transform: translateY(2px);
+  }
+}
